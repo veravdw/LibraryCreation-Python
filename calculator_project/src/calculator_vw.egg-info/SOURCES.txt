@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+pyproject.toml
+src/calculator_vw/__init__.py
+src/calculator_vw/calculator.py
+src/calculator_vw.egg-info/PKG-INFO
+src/calculator_vw.egg-info/SOURCES.txt
+src/calculator_vw.egg-info/dependency_links.txt
+src/calculator_vw.egg-info/top_level.txt
+tests/test_calc.py
