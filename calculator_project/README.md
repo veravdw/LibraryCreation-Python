@@ -15,8 +15,6 @@ By importing the calculator_vs package and module you will be able to make use o
 .divide() 
 .multiply() 
 .nroot()
-
-And: 
 .reset()
 
 The above functions only require one number as an input and will perform a calculation with that, based on the outcome of the previous calculation, the memory. 
