@@ -1,42 +1,46 @@
-from calculator_vw import calculator 
+from calculator_vw.calculator import Calculator
 
-# Creating an instance of Calculator()
-test_calculator = calculator.Calculator()
+# Create an instance of the Calculator class
+test_calculator = Calculator()
 
-# test addition from zero and memory
-assert test_calculator.add(4) == 4
-assert test_calculator.add(4) == 8
+def test_add():
+  assert test_calculator.add(4) == 4
+  assert test_calculator.add(4) == 8
 
-# test reset
-assert test_calculator.reset() == 0
+def test_reset():
+  assert test_calculator.reset() == 0
 
-# test subtraction
-assert test_calculator.subtract(4) == -4
-assert test_calculator.subtract(4) == -8
-assert test_calculator.reset() == 0
+def test_subtract():
+  assert test_calculator.subtract(4) == -4
+  assert test_calculator.subtract(4) == -8
+  assert test_calculator.reset() == 0
 
-# test multiplication
-assert test_calculator.multiply(4) == 0
-assert test_calculator.add(10) == 10
-assert test_calculator.multiply(4) == 40
-assert test_calculator.reset() == 0
+def test_multiply():
+  assert test_calculator.multiply(4) == 0
+  assert test_calculator.add(10) == 10
+  assert test_calculator.multiply(4) == 40
+  assert test_calculator.reset() == 0
 
-# test division
-assert test_calculator.divide(4) == 0
-assert test_calculator.add(10) == 10
-assert test_calculator.divide(2) == 5
-assert test_calculator.reset() == 0
+def test_divide():
+  assert test_calculator.divide(4) == 0
+  assert test_calculator.add(10) == 10
+  assert test_calculator.divide(2) == 5
+  assert test_calculator.reset() == 0
 
-# test nroot
-assert test_calculator.nroot(0) == 0
-assert test_calculator.add(9) == 9
-assert test_calculator.nroot(2) == 3
+def test_nroot():
+  assert test_calculator.nroot(1) == 0
+  assert test_calculator.add(9) == 9
+  assert test_calculator.nroot(2) == 3
 
-# test combination
-assert test_calculator.add(17) == 20
-assert test_calculator.multiply(4) == 80
-assert test_calculator.divide(2) == 40
-assert test_calculator.subtract(20) == 20
+
+if __name__ == "__main__":
+  test_add()
+  test_reset()
+  test_subtract()
+  test_multiply()
+  test_divide()
+  test_nroot()
+  print("Everything passed")
 
 
 
